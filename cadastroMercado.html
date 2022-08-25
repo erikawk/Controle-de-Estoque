@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro do Mercado</title>
+    <script src="index.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="containerCadastro">
+        <h1 id="h1">Seja bem-vindo!</h1>
+        <h2 id="h2">Cadastre seu comércio aqui!</h2>
+        <form action="paginaInicial.html">
+            <label for="nomeMercado" id="labelNomeMerc" >Nome: </label>
+            <input type="text" name="nomeMercado" id="nomeMercado" placeholder="  Ex.: Cooper" autocomplete="off">
+            <br>
+            <br>
+            <label for="logoMercado" id="labelLogoMerc">Logo: </label>
+            <input type="text" name="logoMercado" id="logoMercado" placeholder="  Link da imagem" autocomplete="off">
+            <input type="submit" id="cadastrarMercado" onclick="cadastroMercado()">
+        </form>
+    </div>
+   
+</body>
+</html>
+

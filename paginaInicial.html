@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mercado</title>
+    <script src="index.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+</head>
+ 
+<body>
+    <div id="containerInicio">
+        <h1 id="bemVindoMerc">Bem-vindo, <span id="nomeDoMercado"> </span></h1>
+        <div id="mostraImagem"></div>
+    </div>
+ 
+    <div id="titulo">
+        <h2>Cadastro de Produtos</h2>
+    </div>
+ 
+    <div class="container">
+ 
+        <div class="novoProduto">
+            <button onclick="abreModal()" id="botaoNovoProduto">Cadastrar Novo Produto</i></button>
+        </div>
+ 
+        <div class="tabela">
+            <table>
+                <thead>
+                    <tr>
+                        <th id="informacoes">Descrição</th>
+                        <th id="informacoes">Qntd.</th>
+                        <th id="informacoes">Preço</th>
+                        <th id="informacoes">Corredor</th>
+                        <th id="informacoes">Código</th>
+                        <th id="informacoes">Tipo</th>
+                        <th id="informacoes">Medida</th>
+                        <th id="informacoes">Produto</th>
+                        <th class="acao">Editar</th>
+                        <th class="acao">Excluir</th>
+                        <th id="informacoes">Preço Total</th>
+                        <br>
+                        <td style="text-align:center; align-items: center;"></td>
+                    </tr>
+ 
+                    <td style="font-weight: 500;"></td>
+                <tbody>
+                </tbody>
+                </thead>
+            </table>
+        </div>
+        <div class="modalContainer">
+            <div class="modal">
+                <form>
+                    <label id="labelCadastroMerc" for="descricao">Descrição do Produto</label>
+                    <input id="descricao" type="text" required placeholder="Ex: cor azul" autocomplete="off">
+                    <label id="labelCadastroMerc" for="qtdEstoque">Quantidade em estoque</label>
+                    <input id="qtdEstoque" type="number" required placeholder="Ex: 950" autocomplete="off"/>
+                    <label id="labelCadastroMerc" for="precoUni">Preço Unitário</label>
+                    <input id="precoUni" type="number" required placeholder="Ex: 99,99" autocomplete="off"/>
+                    <label id="labelCadastroMerc" for="corredor">Corredor</label>
+                    <input id="corredor" type="text" required placeholder="Link da imagem do corredor" autocomplete="off"/>
+                    <label id="labelCadastroMerc" for="codigoProduto">Código do Produto</label>
+                    <input id="codigoProduto" type="number" required placeholder="Ex: 009" autocomplete="off">
+                    <label id="labelCadastroMerc" for="tipoProduto">Tipo de Produto</label>
+                    <br>
+                    <select id="tipoProduto">
+                        <option disabled selected>Escolha uma opção</option>
+                        <option value="Alimento">Alimento</option>
+                        <option value="Bebida">Bebida</option>
+                        <option value="Higiene">Higiene</option>
+                        <option value="Limpeza">Limpeza</option>
+                    </select>
+                    <br>
+                    <br>
+                    <label id="labelCadastroMerc" for="unidadeMedida">Unidade de Medida</label>
+                    <br>
+                    <select id="unidadeMedida">
+                        <option disabled selected>Escolha uma opção</option>
+                        <option value="Quilo">Quilo</option>
+                        <option value="Grama">Grama</option>
+                        <option value="Litro">Litro</option>
+                        <option value="Unidade">Unidade</option>
+                        <option value="Metro">Metro</option>
+                        <option value="Centímetro">Centímetro</option>
+                    </select>
+                    <br>
+                    <br>
+                    <label id="labelCadastroMerc"for="imagem">Imagem do Produto</label>
+                    <input id="imagem" type="text" required placeholder="Link da imagem do produto" autocomplete="off"/>
+                    <button id="salvar">Salvar</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    </div>
+    <button id="sair" onclick="sair()">Sair</button>
+ 
+</body>
+ 
+</html>
